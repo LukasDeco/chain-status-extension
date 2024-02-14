@@ -1,3 +1,3 @@
 # Chain Status
 
-## Browser Extension for displaying RPC endpoint statuses
+Browser Extension for displaying RPC endpoint statuses
