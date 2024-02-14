@@ -11,9 +11,9 @@ async function checkSolanaDevnetStatus() {
         });
         const data = await response.json();
         if (data.result === "ok") {
-            document.getElementById("solana-status").innerHTML = "OK";
+            document.getElementById("solana-devnet-status").innerHTML = "OK";
         } else {
-            document.getElementById("solana-status").innerHTML = "DOWN"
+            document.getElementById("solana-devnet-status").innerHTML = "DOWN"
         }
     } catch (error) {
         console.error('Error checking Devnet status:', error);

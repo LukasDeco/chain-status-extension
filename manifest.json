@@ -6,7 +6,7 @@
         "activeTab"
     ],
     "action": {
-        "default_popup": "popup.html",
+        "default_popup": "index.html",
         "default_icon": {
             "16": "images/chain status icon-16.png",
             "48": "images/chain status icon-48.png",
