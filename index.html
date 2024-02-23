@@ -22,6 +22,10 @@
         }
 
         h4 {
+            display: flex;
+
+            justify-content: space-between;
+            align-items: center;
             background-color: #5B3F76;
             /* Purple for the header background */
             padding: 10px;
@@ -36,9 +40,23 @@
             align-items: center;
         }
 
-        #solana-devnet-status {
-            color: #53A2A5;
-            /* Teal for the status text */
+        .status-indicator {
+            background: #799aed;
+            color: white;
+            padding: 4px;
+            border-radius: 20px;
+            width: 50px;
+            display: inline-block;
+            text-align: center;
+
+        }
+
+        .status-indicator.up {
+            background: #08b077;
+        }
+
+        .status-indicator.down {
+            background: #d96c5e;
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -50,7 +68,9 @@
         Chain Status
     </h1>
     <div>
-        <h4>Solana Devnet Status: <span id="solana-devnet-status">...</span></h4>
+        <h4>Solana Devnet Status: <span class="status-indicator" id="solana-devnet-status">...</span></h4>
+        <h4>Solana Testnet Status: <span class="status-indicator" id="solana-testnet-status">...</span></h4>
+        <h4>Ethereum Goerli Status: <span class="status-indicator" id="ether-goerli-status">...</span></h4>
     </div>
 </body>
 
